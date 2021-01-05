@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 
 //Components
 import MovieCard from '../components/ui/MovieCard';
-import {css} from "@emotion/core";
+import {css} from "@emotion/react";
 import CircleLoader from "react-spinners/CircleLoader";
 
 //Bootstrap
