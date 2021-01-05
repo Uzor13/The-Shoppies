@@ -9,7 +9,6 @@ import Card from "react-bootstrap/cjs/Card";
 import Button from "react-bootstrap/cjs/Button";
 
 //Image
-import Placeholder from '../../assets/img/undraw_images_aef7.svg'
 import {confirmAlert} from "react-confirm-alert";
 
 
@@ -35,7 +34,7 @@ const MovieCard = ({movie}) => {
         });
     };
 
-    
+
     const nominationsDisabled = !!storedMovie;
     return (
         <Container>
@@ -68,13 +67,13 @@ const MovieCard = ({movie}) => {
                             {nominationsDisabled ? <Button
                                 onClick={() => submit()}
                                 style={
-                            {
-                                backgroundColor: '#F86D4E',
-                                borderColor: 'transparent'
-                            }}
-                                >
+                                    {
+                                        backgroundColor: '#F86D4E',
+                                        borderColor: 'transparent'
+                                    }}
+                            >
                                 Remove
-                                </Button> : null}
+                            </Button> : null}
 
                         </Card.Body>
                     </Card>
