@@ -42,7 +42,6 @@ const Search = () => {
     const override = css`
   display: block;
   margin: 20px auto;
-  border-color: red;
 `;
     return (
         <Container style={{marginTop: '25px', marginBottom: '20px'}}>
