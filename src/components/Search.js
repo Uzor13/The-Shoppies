@@ -31,7 +31,7 @@ const Search = () => {
         e.preventDefault();
         setQuery(e.target.value);
         setLoading(true);
-        const url = `http://www.omdbapi.com/?s=${e.target.value}&type=movie&apikey=9f23257c`;
+        const url = `https://www.omdbapi.com/?s=${e.target.value}&type=movie&apikey=9f23257c`;
         const response = await fetch(url);
         const resJSON = await response.json();
         if (resJSON.Search) {
